@@ -1,0 +1,49 @@
+.footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer .social-icons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer .social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.2s, color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffcc00;
+}
+
+/* Responsive spacing */
+@media (max-width: 600px) {
+  .footer .social-icons {
+    gap: 15px;
+  }
+
+  .footer .social-icons a {
+    font-size: 20px;
+  }
+}
+
+/* Ensure footer text stays readable */
+.footer p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Small adjustments for medium screens */
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 1rem;
+  }
+}
